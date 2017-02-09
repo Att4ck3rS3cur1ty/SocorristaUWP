@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="SocorristaUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SocorristaUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Pivot Title="Socorrista">
+        <PivotItem Header="Atendimento">
+            <Grid HorizontalAlignment="Left" Height="525" Margin="20,10,0,0" VerticalAlignment="Top" Width="306">
+                <Button x:Name="btnIniciarAtendimento" Content="Iniciar um novo atendimento" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="296" Background="Green"/>
+                <Button x:Name="btnFinalizarAtendimento" Content="Finalizar o atendimento" HorizontalAlignment="Left" Margin="0,65,0,0" VerticalAlignment="Top" Width="296" Background="Red"  />
+            </Grid>
+        </PivotItem>
+        <PivotItem Header="Viatura">
+            <Grid HorizontalAlignment="Left" Height="525" Margin="10,10,0,0" VerticalAlignment="Top" Width="316">
+                <Button x:Name="btnAssociar" Content="Ocupar uma viatura" HorizontalAlignment="Left" Margin="112,26,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="btnDesassociar" Content="Desocupar viatura" HorizontalAlignment="Left" Margin="96,93,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </PivotItem>
+        <PivotItem Header="Detalhes da ocorrência">
+            <Grid HorizontalAlignment="Left" Height="525" Margin="10,10,0,0" VerticalAlignment="Top" Width="316">
+                <ListView>
+                    
+                </ListView>
+            </Grid>
+
+        </PivotItem>
+
+    </Pivot>
+
+
+</Page>
